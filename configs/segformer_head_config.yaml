@@ -1,0 +1,11 @@
+# File: configs/segformer_head_config.yaml
+# SegFormer Head Configuration for DINOv2
+# This configuration file sets up the SegFormer head for DINOv2 model training.
+# It specifies the model name, head type, and parameters for the SegFormer head.
+
+_base_: base.yaml
+
+model_name: "dinov2_segformer_head"
+head_type: "SegFormer"
+head_params:
+  embedding_dim: 512 # Common embedding dimension for SegFormer decoder

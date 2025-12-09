@@ -1,0 +1,10 @@
+# MLP Head Configuration for DINOv2
+# This configuration file sets up the MLP head for DINOv2 model training.
+# It specifies the model name, head type, and parameters for the MLP head.
+
+_base_: base.yaml
+
+model_name: "dinov2_mlp_head"
+head_type: "MLP"
+head_params:
+  mlp_feature_dim: 256 # Intermediate dimension for MLP head

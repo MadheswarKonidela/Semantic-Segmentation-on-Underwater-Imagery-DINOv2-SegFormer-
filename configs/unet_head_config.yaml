@@ -1,0 +1,11 @@
+# File: configs/unet_head_config.yaml
+# Unet Head Configuration for DINOv2
+# This configuration file sets up the U-Net head for DINOv2 model training.
+# It specifies the model name, head type, and parameters for the U-Net head.
+
+_base_: base.yaml
+
+model_name: "dinov2_unet_head"
+head_type: "Unet"
+head_params:
+  decoder_channels: [512, 256, 128, 64, 32] # Channels for U-Net decoder path

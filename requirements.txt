@@ -1,0 +1,13 @@
+torch
+torchvision
+torchaudio
+transformers # For SegFormer model (potentially for backbone integration too if using Hugging Face)
+timm # For DINOv2 (often used with it)
+numpy
+opencv-python
+matplotlib
+scikit-learn
+tqdm
+PyYAML # For parsing config files
+albumentations # Excellent for robust data augmentation
+Pillow # For image loading (used by default with some libs)
