@@ -55,6 +55,10 @@ python3 -m src.train --config configs/segformer_head_config.yaml
 
 ```
 ```bash
+python3 -m src.evalute --config configs/segformer_head_config.yaml
+
+```
+```bash
 python3 -m src.train --config configs/unet_head_config.yaml
 
 ```
@@ -107,5 +111,5 @@ jupyter notebook notebooks/verify_masks.ipynb
 * `src/data/`: Dataset loaders and mask remapping logic.
 * `src/models/`: DINOv2 backbone and SegFormer and Unet head definitions.
 * `configs/`: YAML files for experiment management.
-* `train.py`: Main training and validation script.
+* `src/train.py` and `src/evaluate.py`: Main training and validation script.
 
